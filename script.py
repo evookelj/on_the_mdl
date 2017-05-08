@@ -77,12 +77,14 @@ def run(filename):
 
         elif cmd == 'hermite' or cmd == 'bezier':
             #print 'curve\t' + line + ": " + str(args)
+            edges = []
             add_curve(edges,
                       float(args[0]), float(args[1]),
                       float(args[2]), float(args[3]),
                       float(args[4]), float(args[5]),
                       float(args[6]), float(args[7]),
-                      step, line)                      
+                      step, line)    
+            edges = []                  
             
         elif cmd == 'line':            
             #print 'LINE\t' + str(args)
